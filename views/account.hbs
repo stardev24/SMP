@@ -1,0 +1,31 @@
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#tweetButton").click(function(){
+		var tweetMessage = $("#tweetBox").val();
+	var data = {userId:"55c65e4da154d0543f96a473",tweetMessage:tweetMessage}
+	console.log("data is >>",data);
+	       $.ajax({
+	        url: 'http://localhost:9999/twitter/post/status',
+	        type: 'POST',
+	        data:JSON.stringify(data),
+	        contentType:'application/json',
+	      }).done(function(response) {
+			console.log("response is >>",response)
+	      }).fail(function(err) {
+			console.log("error is >>",err)
+	      });
+	});
+});
+</script>
+
+<h1>Welcome to the app</h1>
+
+<!--<button><a href="/logout">Logout</a></button>-->
+
+
+<textarea name="tweetBox" id="tweetBox" cols="50" rows="5">
+Enter some text...
+</textarea>
+<br />
+<input type="submit" id="tweetButton" text ="tweet"/>

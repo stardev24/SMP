@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'isntall' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json @0.0.1 No description
+5 warn package.json @0.0.1 No repository field.
+6 warn package.json @0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ 'c:\\Users\\sappanab\\Desktop\\passport-project',
+8 verbose install   [ 'express',
+8 verbose install     'jade',
+8 verbose install     'mongoose',
+8 verbose install     'passport',
+8 verbose install     'passport-facebook',
+8 verbose install     'passport-twitter',
+8 verbose install     'passport-github',
+8 verbose install     'passport-google',
+8 verbose install     'passport-local',
+8 verbose install     'mocha',
+8 verbose install     'hbs' ] ]
+9 info preinstall @0.0.1
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping express@~3.3.4 c:\Users\sappanab\Desktop\passport-project
+12 verbose already installed skipping jade@~0.34.1 c:\Users\sappanab\Desktop\passport-project
+13 verbose already installed skipping mongoose@~3.8.0 c:\Users\sappanab\Desktop\passport-project
+14 verbose already installed skipping passport@~0.1.17 c:\Users\sappanab\Desktop\passport-project
+15 verbose already installed skipping passport-facebook@~1.0.1 c:\Users\sappanab\Desktop\passport-project
+16 verbose already installed skipping passport-twitter@~1.0.2 c:\Users\sappanab\Desktop\passport-project
+17 verbose already installed skipping passport-github@~0.1.5 c:\Users\sappanab\Desktop\passport-project
+18 verbose already installed skipping passport-google@~0.3.0 c:\Users\sappanab\Desktop\passport-project
+19 verbose cache add [ 'passport-local@~1.0.1', null ]
+20 verbose cache add name=undefined spec="passport-local@~1.0.1" args=["passport-local@~1.0.1",null]
+21 verbose parsed url { protocol: null,
+21 verbose parsed url   slashes: null,
+21 verbose parsed url   auth: null,
+21 verbose parsed url   host: null,
+21 verbose parsed url   port: null,
+21 verbose parsed url   hostname: null,
+21 verbose parsed url   hash: null,
+21 verbose parsed url   search: null,
+21 verbose parsed url   query: null,
+21 verbose parsed url   pathname: 'passport-local@~1.0.1',
+21 verbose parsed url   path: 'passport-local@~1.0.1',
+21 verbose parsed url   href: 'passport-local@~1.0.1' }
+22 verbose already installed skipping mocha@~1.14.0 c:\Users\sappanab\Desktop\passport-project
+23 verbose already installed skipping hbs@* c:\Users\sappanab\Desktop\passport-project
+24 verbose cache add name="passport-local" spec="~1.0.1" args=["passport-local","~1.0.1"]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: '~1.0.1',
+25 verbose parsed url   path: '~1.0.1',
+25 verbose parsed url   href: '~1.0.1' }
+26 verbose addNamed [ 'passport-local', '~1.0.1' ]
+27 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+28 silly lockFile b5599153-passport-local-1-0-1 passport-local@~1.0.1
+29 verbose lock passport-local@~1.0.1 C:\Users\sappanab\AppData\Roaming\npm-cache\b5599153-passport-local-1-0-1.lock
+30 silly addNameRange { name: 'passport-local',
+30 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+30 silly addNameRange   hasData: false }
+31 verbose request where is /passport-local
+32 verbose request registry https://registry.npmjs.org/
+33 verbose request id fa9c3c07a8163689
+34 verbose url raw /passport-local
+35 verbose url resolving [ 'https://registry.npmjs.org/', './passport-local' ]
+36 verbose url resolved https://registry.npmjs.org/passport-local
+37 verbose request where is https://registry.npmjs.org/passport-local
+38 info trying registry request attempt 1 at 01:44:09
+39 verbose etag "4VQ5WQNQS7K5IWHW17XLRVYDQ"
+40 http GET https://registry.npmjs.org/passport-local
+41 http 304 https://registry.npmjs.org/passport-local
+42 silly registry.get cb [ 304,
+42 silly registry.get   { date: 'Mon, 03 Aug 2015 20:14:08 GMT',
+42 silly registry.get     via: '1.1 varnish',
+42 silly registry.get     'cache-control': 'max-age=60',
+42 silly registry.get     etag: '"4VQ5WQNQS7K5IWHW17XLRVYDQ"',
+42 silly registry.get     age: '0',
+42 silly registry.get     connection: 'keep-alive',
+42 silly registry.get     'x-served-by': 'cache-sin6921-SIN',
+42 silly registry.get     'x-cache': 'HIT',
+42 silly registry.get     'x-cache-hits': '1',
+42 silly registry.get     'x-timer': 'S1438632848.201429,VS0,VE856',
+42 silly registry.get     vary: 'Accept' } ]
+43 verbose etag https://registry.npmjs.org/passport-local from cache
+44 silly addNameRange number 2 { name: 'passport-local',
+44 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+44 silly addNameRange   hasData: true }
+45 silly addNameRange versions [ 'passport-local',
+45 silly addNameRange   [ '0.1.0',
+45 silly addNameRange     '0.1.1',
+45 silly addNameRange     '0.1.2',
+45 silly addNameRange     '0.1.3',
+45 silly addNameRange     '0.1.4',
+45 silly addNameRange     '0.1.5',
+45 silly addNameRange     '0.1.6',
+45 silly addNameRange     '1.0.0' ] ]
+46 silly lockFile b5599153-passport-local-1-0-1 passport-local@~1.0.1
+47 silly lockFile b5599153-passport-local-1-0-1 passport-local@~1.0.1
+48 error notarget No compatible version found: passport-local@'>=1.0.1-0 <1.1.0-0'
+48 error notarget Valid install targets:
+48 error notarget ["0.1.0","0.1.1","0.1.2","0.1.3","0.1.4","0.1.5","0.1.6","1.0.0"]
+48 error notarget
+48 error notarget This is most likely not a problem with npm itself.
+48 error notarget In most cases you or one of your dependencies are requesting
+48 error notarget a package version that doesn't exist.
+49 error System Windows_NT 6.1.7601
+50 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "isntall"
+51 error cwd c:\Users\sappanab\Desktop\passport-project
+52 error node -v v0.10.32
+53 error npm -v 1.4.28
+54 error code ETARGET
+55 verbose exit [ 1, true ]

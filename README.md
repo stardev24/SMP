@@ -1,2 +1,2 @@
 # SMP
-This is my test
+This is for testing
