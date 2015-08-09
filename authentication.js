@@ -57,18 +57,18 @@ passport.deserializeUser(function(id, done) {
 
 //This is for twitter
 passport.use(new TwitterStrategy({
-   consumerKey: "xxx",
-   consumerSecret: "xxx",
+   consumerKey: "1lUBWsOuDQIE4MQVSzwibfjFh",
+   consumerSecret: "xdOqXRCVpFEl87nOHZyimDVncCgFkvYwpcAuFZ8rAVI0xupKLZ",
    callbackURL: "http://localhost:9999/callback"
  },
  function(accessToken, refreshToken, profile, done) {
   console.log("profile is >>",profile);
    console.log("OATHaccessToken is >>",accessToken);
    console.log("OATHaccessToken secret is >>",refreshToken);
- User.findOne({ oauthID: profile.id }, function(err, user) {
+ User.findOne({ "twitter.access_token": accessToken }, function(err, user) {
 console.log("user details is >>",user);
    if(err) { console.log("error is >>",err);}
-   if (!err && user != null) {
+   else if (!err && user) {
      done(null, user);
    } else {
      var twitterUser = new User();
